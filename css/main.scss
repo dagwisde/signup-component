@@ -24,3 +24,10 @@ $gray: #b9b6d3;
 
 /* Typeface */
 $font: 'Poppins', sans-serif;
+
+/* === 3. CONTAINERS === */
+
+body {
+	background-color: $red;
+	background-image: url(/resources/bg-intro-mobile.png);
+}

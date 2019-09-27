@@ -16,4 +16,9 @@ html {
 /* === 2. VARIABLES === */
 /* Colors */
 /* Typeface */
+/* === 3. CONTAINERS === */
+body {
+  background-color: #ff7a7a;
+  background-image: url(/resources/bg-intro-mobile.png);
+}
 /*# sourceMappingURL=main.css.map */
