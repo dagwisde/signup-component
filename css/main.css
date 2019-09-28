@@ -4,6 +4,7 @@
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  height: 100%;
 }
 
 *,
@@ -20,5 +21,34 @@ html {
 body {
   background-color: #ff7a7a;
   background-image: url(/resources/bg-intro-mobile.png);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 1.5em;
+  font-family: "Poppins", sans-serif;
+}
+
+/* === 4. INTRO === */
+.intro {
+  color: #fafafa;
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.intro__heading {
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+.intro__body {
+  font-weight: 400;
+  line-height: 2.175rem;
 }
 /*# sourceMappingURL=main.css.map */
