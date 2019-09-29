@@ -33,11 +33,15 @@ $font: 'Poppins', sans-serif;
 body {
 	background-color: $red;
 	background-image: url(/resources/bg-intro-mobile.png);
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	padding: 0 1.5em;
 	font-family: $font;
+}
+
+main {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	min-height: 100vh;
 }
 
 /* === 4. INTRO === */
@@ -46,13 +50,16 @@ body {
 	color: #fafafa;
 	text-align: center;
 	margin: 3em 0 2em 0;
+	padding: 0 1.25rem 1.25rem 1.25rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	&__heading {
 		font-size: 1.75rem;
 		font-weight: 700;
 	}
 	&__body {
 		font-weight: 500;
-		line-height: 2.155rem;
 		width: auto;
 	}
 }
@@ -70,8 +77,8 @@ body {
 	box-shadow: 0px 8px 3px rgba(0, 0, 0, 0.25);
 	margin-bottom: 24px;
 
-	&__text {
-		width: 60%;
+	&__wrapper {
+		flex-basis: 50%;
 	}
 }
 
@@ -84,18 +91,24 @@ body {
 	box-shadow: 0px 8px 3px rgba(0, 0, 0, 0.25);
 	padding: 1.5rem;
 	margin-bottom: 3.875rem;
+	display: flex;
+	flex-direction: column;
 
 	&__submit {
 		padding: 0.7em;
 		margin: 0.6em;
 		background-color: $green;
 		color: $white;
+		cursor: pointer;
 		border: 1px solid $green;
-		border-bottom: 4px solid $green--dark;
+		border-bottom: 3px solid $green--dark;
 		border-radius: 0.4em;
 		font-weight: 700;
-		font-size: 1rem;
+		font-size: 0.85rem;
+		padding: 1.2em;
 		text-transform: uppercase;
+		display: flex;
+		justify-content: center;
 
 		&:hover,
 		:focus,
@@ -105,7 +118,7 @@ body {
 	}
 
 	&__terms {
-		font-size: 0.75rem;
+		font-size: 0.65rem;
 		color: $gray;
 		width: 90%;
 		margin: 0 auto;
@@ -133,12 +146,13 @@ body {
 
 	&__input {
 		margin-bottom: 16px;
-		border: 1px solid $gray;
+		border: 0.03125rem solid $gray;
 		border-radius: 0.3em;
-		padding: 1em;
+		padding: 1.3em;
 		margin: 1em;
 		font-weight: 600;
 		font-size: 0.75rem;
+		color: $blue--dark;
 
 		&:focus {
 			border: 1px solid $blue--dark;
@@ -168,4 +182,18 @@ body {
 	font-size: 0.75rem;
 	font-weight: 400;
 	text-align: end;
+}
+
+/* === 7. MEDIA QUERIES === */
+
+@media only screen and (min-width: 1024px) {
+	.main {
+		flex-direction: row;
+		padding: 3.4375rem;
+	}
+
+	.intro {
+		margin: 0 10vw 0 0;
+		width: 40vw;
+	}
 }

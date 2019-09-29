@@ -21,6 +21,32 @@ html {
 body {
   background-color: #ff7a7a;
   background-image: url(/resources/bg-intro-mobile.png);
+  font-family: "Poppins", sans-serif;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+}
+
+/* === 4. INTRO === */
+.intro {
+  color: #fafafa;
+  text-align: center;
+  margin: 3em 0 2em 0;
+  padding: 0 1.25rem 1.25rem 1.25rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -31,15 +57,6 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 0 1.5em;
-  font-family: "Poppins", sans-serif;
-}
-
-/* === 4. INTRO === */
-.intro {
-  color: #fafafa;
-  text-align: center;
-  margin: 3em 0 2em 0;
 }
 
 .intro__heading {
@@ -49,7 +66,6 @@ body {
 
 .intro__body {
   font-weight: 500;
-  line-height: 2.155rem;
   width: auto;
 }
 
@@ -71,8 +87,9 @@ body {
   margin-bottom: 24px;
 }
 
-.cta__text {
-  width: 60%;
+.cta__wrapper {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
 }
 
 /* === 6. SIGN-UP FORM === */
@@ -84,6 +101,13 @@ body {
           box-shadow: 0px 8px 3px rgba(0, 0, 0, 0.25);
   padding: 1.5rem;
   margin-bottom: 3.875rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .signup__submit {
@@ -91,12 +115,20 @@ body {
   margin: 0.6em;
   background-color: #38cc8c;
   color: #fafafa;
+  cursor: pointer;
   border: 1px solid #38cc8c;
-  border-bottom: 4px solid #49ae84;
+  border-bottom: 3px solid #49ae84;
   border-radius: 0.4em;
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 0.85rem;
+  padding: 1.2em;
   text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .signup__submit:hover,
@@ -106,7 +138,7 @@ body {
 }
 
 .signup__terms {
-  font-size: 0.75rem;
+  font-size: 0.65rem;
   color: #b9b6d3;
   width: 90%;
   margin: 0 auto;
@@ -141,12 +173,13 @@ body {
 
 .form__input, .form__input--error {
   margin-bottom: 16px;
-  border: 1px solid #b9b6d3;
+  border: 0.03125rem solid #b9b6d3;
   border-radius: 0.3em;
-  padding: 1em;
+  padding: 1.3em;
   margin: 1em;
   font-weight: 600;
   font-size: 0.75rem;
+  color: #3e3c49;
 }
 
 .form__input:focus, .form__input--error:focus {
@@ -170,5 +203,20 @@ body {
   font-size: 0.75rem;
   font-weight: 400;
   text-align: end;
+}
+
+/* === 7. MEDIA QUERIES === */
+@media only screen and (min-width: 1024px) {
+  .main {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 3.4375rem;
+  }
+  .intro {
+    margin: 0 10vw 0 0;
+    width: 40vw;
+  }
 }
 /*# sourceMappingURL=main.css.map */
