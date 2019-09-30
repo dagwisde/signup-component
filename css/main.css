@@ -234,6 +234,9 @@ main {
             flex-direction: row;
     padding: 3.4375rem;
   }
+  body {
+    background-image: url(/resources/bg-intro-desktop.png);
+  }
   .intro {
     margin: 0 10vw 0 0;
     width: 40vw;
