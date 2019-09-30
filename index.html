@@ -10,7 +10,7 @@
   <link rel="stylesheet" type="text/css" href="./css/main.css"> 
   <!-- Scripts -->
   <script src="https://kit.fontawesome.com/a06f8c8ab7.js" crossorigin="anonymous"></script>
-  <script src="/js/main.js"></script>
+  <script src="/js/main.js" defer></script>
 
 </head>
 <body>
@@ -29,25 +29,25 @@
 </section>
 
 <section class="signup">
-<form class="form">
+<form class="form" name="signUp" action="/" method="GET">
 
   <div class="form__field">
-  <input type="text" class="form__input" aria-label="first name" placeholder="First Name">
-  <!-- <span class="error-message">First name cannot be empty</span> -->
+  <input type="text" class="form__input" id="firstName" name="firstName" aria-label="first name" placeholder="First Name" autofocus>
+  <span class="error-message hide" role="alert">First name cannot be empty</span>
   </div>
 
   <div class="form__field">
-  <input class="form__input" type="text" aria-label="last name" placeholder="Last Name">
-  <!-- <span class="error-message">Last name cannot be empty</span> -->
+  <input  type="text" id="lastName" name="lastName" class="form__input" aria-label="last name" placeholder="Last Name">
+  <span class="error-message hide" role="alert">Last name cannot be empty</span>
   </div>
 
   <div class="form__field">
-  <input class="form__input" type="email" aria-label="email address" placeholder="Email Address"> 
-  <!-- <span class="error-message">Looks like this is not an email</span> -->
+  <input class="form__input" id="email" type="text" aria-label="email address" placeholder="Email Address"> 
+  <span class="error-message hide" role="alert">Looks like this is not an email</span>
   </div>
   <div class="form__field">
-  <input class="form__input" type="password" aria-label="password" placeholder="password"> 
-  <!-- <span class="error-message">Password cannot be empty</span> -->
+  <input class="form__input" id="password" type="password" aria-label="password" placeholder="password"> 
+  <span class="error-message hide" role="alert">Password cannot be empty</span>
   </div>
 
   <button class="signup__submit" type="submit">Claim your free trial</button>
