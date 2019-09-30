@@ -185,11 +185,27 @@ main {
   outline: none;
 }
 
+.success {
+  background: url("/resources/icon-success.svg") no-repeat;
+  background-size: 24px 24px;
+  background-position: right;
+  background-origin: content-box;
+  border: 2px solid #38cc8c;
+}
+
+.success:focus {
+  border: 2px solid #38cc8c !important;
+}
+
 .error {
-  background: url(/resources/icon-error.svg) no-repeat;
+  background: url("/resources/icon-error.svg") no-repeat;
   background-position: right;
   background-origin: content-box;
   border: 2px solid #ff7a7a;
+}
+
+.error:focus {
+  border: 2px solid #ff7a7a !important;
 }
 
 .error-message {

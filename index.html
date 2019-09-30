@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <!-- Meta -->
   <meta charset="UTF-8">
@@ -7,63 +8,68 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./resources/favicon-32x32.png">
   <title>Sign up form</title>
   <!-- Stylesheets -->
-  <link rel="stylesheet" type="text/css" href="./css/main.css"> 
+  <link rel="stylesheet" type="text/css" href="./css/main.css">
   <!-- Scripts -->
   <script src="https://kit.fontawesome.com/a06f8c8ab7.js" crossorigin="anonymous"></script>
-  <script src="./js/main.js" defer></script>
+  <script src="/js/main.js" defer></script>
 
 </head>
+
 <body>
   <main class="main">
     <section class="intro">
       <h1 class="intro__heading">Learn to code by watching others</h1>
       <p class="intro__body">
-      See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
-      but understanding how developers think is invaluable. 
+        See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+        but understanding how developers think is invaluable.
       </p>
-  </section>
- 
-<div class="cta__wrapper">
-<section class="cta">
-  <p class="cta__text"><strong>Try it free 7 days</strong> then $20/mo. thereafter</p>
-</section>
+    </section>
 
-<section class="signup">
-<form class="form" name="signUp" action="#" method="GET">
+    <div class="cta__wrapper">
+      <section class="cta">
+        <p class="cta__text"><strong>Try it free 7 days</strong> then $20/mo. thereafter</p>
+      </section>
 
-  <div class="form__field">
-  <input type="text" class="form__input" id="firstName" name="firstName" aria-label="first name" placeholder="First Name" autofocus>
-  <span class="error-message hide" role="alert">First name cannot be empty</span>
-  </div>
+      <section class="signup">
+        <form class="form" name="signUp" action="/" method="GET">
 
-  <div class="form__field">
-  <input  type="text" id="lastName" name="lastName" class="form__input" aria-label="last name" placeholder="Last Name">
-  <span class="error-message hide" role="alert">Last name cannot be empty</span>
-  </div>
+          <div class="form__field">
+            <input type="text" class="form__input" id="firstName" name="firstName" aria-label="first name"
+              placeholder="First Name" autofocus>
+            <span class="error-message hide" role="alert">First name cannot be empty</span>
+          </div>
 
-  <div class="form__field">
-  <input class="form__input" id="email" type="text" aria-label="email address" placeholder="Email Address"> 
-  <span class="error-message hide" role="alert">Looks like this is not an email</span>
-  </div>
-  <div class="form__field">
-  <input class="form__input" id="password" type="password" aria-label="password" placeholder="password"> 
-  <span class="error-message hide" role="alert">Password cannot be empty</span>
-  </div>
+          <div class="form__field">
+            <input type="text" id="lastName" name="lastName" class="form__input" aria-label="last name"
+              placeholder="Last Name">
+            <span class="error-message hide" role="alert">Last name cannot be empty</span>
+          </div>
 
-  <button class="signup__submit" type="submit">Claim your free trial</button>
-  </form> 
+          <div class="form__field">
+            <input class="form__input" id="email" type="text" aria-label="email address" placeholder="Email Address">
+            <span class="error-message hide" role="alert">Looks like this is not an email</span>
+          </div>
+          <div class="form__field">
+            <input class="form__input" id="password" type="password" aria-label="password" placeholder="password">
+            <span class="error-message hide" role="alert">Password cannot be empty</span>
+          </div>
 
-  <section class="signup__terms">
-  By clicking the button, you are agreeing to our <a class="signup__link" href="#">Terms and Services</a>
-  </section>
-</section> 
-</div>
-</main>
+          <button class="signup__submit" type="submit">Claim your free trial</button>
+        </form>
+
+        <section class="signup__terms">
+          By clicking the button, you are agreeing to our <a class="signup__link" href="#">Terms and Services</a>
+        </section>
+      </section>
+    </div>
+  </main>
   <footer>
     <p class="attribution">
-      Challenge by <a class="attribution__link" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a><br>
+      Challenge by <a class="attribution__link" href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank">Frontend Mentor</a><br>
       Coded by <a class="attribution__link" href="https://oshadowah.github.io/personal-site/">Tamarind Joy</a>
     </p>
   </footer>
 </body>
+
 </html>
