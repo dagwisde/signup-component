@@ -208,7 +208,24 @@ main {
   display: none;
 }
 
-/* === 7. MEDIA QUERIES === */
+/* === 7. ATTRIBUTION === */
+.attribution {
+  text-align: center;
+  color: #fafafa;
+}
+
+.attribution__link {
+  text-decoration: none;
+  color: #3e3c49;
+}
+
+.attribution__link:hover,
+.attribution__link :focus,
+.attribution__link :active {
+  color: #fafafa;
+}
+
+/* === 8. MEDIA QUERIES === */
 @media only screen and (min-width: 1024px) {
   .main {
     -webkit-box-orient: horizontal;

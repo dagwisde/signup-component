@@ -26,8 +26,7 @@ $gray: #b9b6d3;
 $white: #fafafa;
 
 /* Typeface */
-$font: 'Poppins',
-sans-serif;
+$font: 'Poppins', sans-serif;
 
 /* === 3. CONTAINERS === */
 
@@ -189,7 +188,25 @@ main {
 	display: none;
 }
 
-/* === 7. MEDIA QUERIES === */
+/* === 7. ATTRIBUTION === */
+
+.attribution {
+	text-align: center;
+	color: $white;
+
+	&__link {
+		text-decoration: none;
+		color: $blue--dark;
+
+		&:hover,
+		:focus,
+		:active {
+			color: $white;
+		}
+	}
+}
+
+/* === 8. MEDIA QUERIES === */
 
 @media only screen and (min-width: 1024px) {
 	.main {
